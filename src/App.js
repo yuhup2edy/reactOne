@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet'; // use this if you are exporting default Greet 
+// import { Greet } from './components/Greet' use this if you are exporting as export const Greet =  
+//import MyFunction from './components/Greet'; can export any name and use it as function 
+import Welcome from './components/Welcome';
+import Message from './components/Message';
+
+// function App() {
+//   return (
+//     <div className="App">
+//     <MyFunction />
+//     </div>
+//   );
+// }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Greet name ="Indiana" locale = "Sallie Mae"> Thanks for being a loyal customer</Greet>
+    <Welcome name = "Mindtree" location = "Warren" />
+    <Welcome name = "Realogy" location = "Mt. Laurel"> <p> Transition Manager </p></Welcome>
+    <Greet name = "Virginia" locale = "Fannie Mae" />
+    <Message></Message>
     </div>
   );
 }
 
 export default App;
+
+// i can import the function component with any name. in this case i am using MyFunction instead of Greet. While expoorting, 
+// remember to export as default. Other syntax is export const Greet = () => return <h1> Sriram </h1> and in this case, we need to import 
+// the function component as Greet only 
