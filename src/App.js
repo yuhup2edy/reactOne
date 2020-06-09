@@ -7,18 +7,23 @@ import Greet from './components/Greet'; // use this if you are exporting default
 import Welcome from './components/Welcome';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 function App() {
   return (
     <div className="App">
+    <EventBind />
+    {/* <FunctionClick />
+    <ClassClick />
     <Counter />
     <Greet name ="Indiana" locale = "Sallie Mae"> Thanks for being a loyal customer</Greet>
     <Welcome name = "Mindtree" location = "Warren"> Your visit to location was loyal</Welcome> 
-    {/*<Welcome name = "Realogy" location = "Mt. Laurel"> <p> Transition Manager </p></Welcome>
-    <Greet name = "Virginia" locale = "Fannie Mae" /> */}
-
-    <Message></Message>
-    </div>
+    {/*<Welcome name = "Realogy" location = "Mt. Laurel"> <p> Transition Manager </p></Welcome> */}
+    {/* <Greet name = "Virginia" locale = "Fannie Mae" /> */}
+    {/* <Message></Message> */}
+    </div> 
   );
 }
 
