@@ -13,15 +13,22 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Form from './components/Form';
 import Stylesheets from './components/Stylesheets';
 import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';       //these 2 files are using for react styling. naming convention is .module.css 
+
 
 function App() {
   return (
     <div className="App">
-    <Stylesheets primary = {true}/>
+    <Form></Form>
+    {/* <Stylesheets primary = {true}/>
     <Inline />
-    {/*<UserGreeting />
+    <h1 className = "error"> error </h1>
+    <h1 className = {styles.success}> success </h1>
+    <UserGreeting /> 
     <NameList />
     <EventBind />
     <ParentComponent />
